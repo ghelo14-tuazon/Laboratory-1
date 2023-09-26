@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 26, 2023 at 02:13 AM
+-- Generation Time: Sep 26, 2023 at 03:47 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.1.10
 
@@ -39,7 +39,8 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`category_id`, `name`) VALUES
 (1, 'Desert'),
 (6, 'Drinks'),
-(7, 'Main Dish');
+(7, 'Main Dish'),
+(8, 'Hard Drinks');
 
 -- --------------------------------------------------------
 
@@ -62,9 +63,10 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `name`, `category`, `description`, `quantity`, `price`, `category_id`) VALUES
-(134, 'Pancit', 'Main Dish', 'Filipino favorite', 23, '23213.00', NULL),
+(134, 'Pancit Canton', 'Main Dish', 'Filipino favorites', 23, '23213.00', NULL),
 (135, 'Ice Cream', 'Desert', 'sweet', 21, '21.50', NULL),
-(136, 'Coke', 'Drinks', 'Fresh Drink', 25, '20.00', NULL);
+(136, 'Coke', 'Drinks', 'Fresh Drink', 25, '20.00', NULL),
+(137, 'Red Horse', 'Hard Drinks', 'Alcohol', 22, '50.00', NULL);
 
 --
 -- Indexes for dumped tables
@@ -91,13 +93,13 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `category_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `category_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
 
 --
 -- Constraints for dumped tables
